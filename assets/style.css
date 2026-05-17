@@ -57,12 +57,14 @@ a:hover { color: var(--accent-2); }
 .nav-inner { display: flex; align-items: center; justify-content: space-between; height: 72px; }
 .brand { display: flex; align-items: center; gap: 10px; font-weight: 800; font-size: 1.2rem; letter-spacing: -0.02em; color: var(--ink); }
 .brand-mark {
-  width: 32px; height: 32px; border-radius: 9px;
-  background: var(--gradient);
-  display: grid; place-items: center;
-  color: white; font-weight: 800; font-size: 0.9rem;
-  box-shadow: 0 6px 20px -6px rgba(37, 99, 235, 0.5);
+  width: 36px; height: 36px;
+  display: block;
+  border-radius: 10px;
+  box-shadow: 0 8px 22px -8px rgba(37, 99, 235, 0.55);
+  transition: transform .2s ease, box-shadow .2s ease;
 }
+.brand:hover .brand-mark { transform: translateY(-1px); box-shadow: 0 12px 28px -10px rgba(124, 58, 237, 0.6); }
+.footer .brand-mark { box-shadow: 0 8px 22px -8px rgba(0, 0, 0, 0.6); }
 .brand span.brand-light { color: var(--accent); }
 .nav-links { display: flex; gap: 6px; align-items: center; list-style: none; padding: 0; margin: 0; }
 .nav-links a { color: var(--ink-2); font-weight: 500; padding: 8px 14px; border-radius: 8px; font-size: 0.95rem; transition: all .2s ease; }
