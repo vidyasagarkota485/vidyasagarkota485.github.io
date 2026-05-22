@@ -3,115 +3,175 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>About — cloudSrv</title>
-  <meta name="description" content="cloudSrv is a US-based consulting firm pairing senior IT recruiting with AI systems design. Engineers running an engineering-led firm." />
-  <link rel="icon" type="image/svg+xml" href="assets/logo.svg" />
-  <link rel="alternate icon" type="image/png" href="images/favicon.png" />
+  <title>About — CloudSrv</title>
+  <meta name="description" content="CloudSrv is a US-based boutique consulting firm pairing senior IT recruiting with AI systems design. Engineers running an engineering-led firm." />
+  <link rel="icon" type="image/jpeg" href="assets/cloudsrv_logo.jpg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,300..700,0..100&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/style-legacy.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
 <a href="#main" class="skip-link">Skip to content</a>
 
 <nav class="nav">
   <div class="container nav-inner">
-    <a href="index.html" class="brand"><img class="brand-mark" src="assets/logo.svg" alt="cloudSrv logo" width="36" height="36">cloud<span class="brand-light">Srv</span></a>
-    <button class="nav-toggle" aria-label="Menu" onclick="document.getElementById('navlinks').classList.toggle('open')"><span></span><span></span><span></span></button>
+    <a href="index.html" class="brand-link">
+      <img class="brand-mark" src="assets/cloudsrv_logo.jpg" alt="" width="40" height="40" />
+      <span class="brand-name">Cloud<span>Srv</span></span>
+    </a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" onclick="const n=document.getElementById('navlinks');const o=n.classList.toggle('open');this.setAttribute('aria-expanded',o)">
+      <span></span>
+    </button>
     <ul class="nav-links" id="navlinks">
       <li><a href="index.html">Home</a></li>
       <li><a href="services.html">Services</a></li>
       <li><a href="aboutus.html" class="active">About</a></li>
       <li><a href="careers.html">Careers</a></li>
-      <li><a href="contactus.html" class="nav-cta">Contact Us</a></li>
+      <li><a href="contactus.html" class="btn btn-primary" style="padding:10px 20px;font-size:.9rem;margin-left:8px">Talk to us</a></li>
     </ul>
   </div>
 </nav>
+
 <main id="main">
 
-<section class="page-head">
-  <div class="container page-head-inner">
-    <div class="crumbs"><a href="index.html">Home</a> / About</div>
-    <span class="eyebrow">About cloudSrv</span>
-    <h1>Engineers running an<br /><span class="gradient-text">engineering-led firm.</span></h1>
-    <p class="lead" style="max-width:680px; margin: 12px auto 0;">We started cloudSrv because most consulting firms either recruit without engineering depth, or build software without business context. We do both — and we do them together.</p>
-  </div>
-</section>
+  <section class="page-head">
+    <div class="container">
+      <div class="page-head-inner">
+        <div class="crumbs"><a href="index.html">Home</a> &nbsp;/&nbsp; About</div>
+        <h1>Engineers running an engineering-led firm.</h1>
+        <p class="lead">We started CloudSrv because most consulting firms either recruit without engineering depth, or build software without business context. We do both — and we do them together.</p>
+      </div>
+    </div>
+  </section>
 
-<section class="section">
-  <div class="container">
-    <div class="section-media" style="margin-bottom:64px;">
-      <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=1800&amp;q=80&amp;auto=format&amp;fit=crop" alt="A modern office workspace where cloudSrv teams collaborate" loading="lazy" style="aspect-ratio: 21/9;" />
-    </div>
-    <div class="grid grid-2" style="align-items:start;">
-      <div>
-        <span class="eyebrow">Our story</span>
-        <h2>Founded by builders. Run by builders.</h2>
-        <p>cloudSrv was founded in 2023 by senior engineers who had spent over a decade shipping production systems at high-growth product companies. We watched US engineering teams struggle with two parallel problems: hiring senior talent that actually performs, and standing up AI systems that survive past the prototype stage.</p>
-        <p>We built cloudSrv to solve both — under one roof, with the same engineering bar.</p>
-      </div>
-      <div>
-        <span class="eyebrow">Where we are</span>
-        <h2>Headquartered in Apex, NC.</h2>
-        <p>Our team operates from Apex, North Carolina, with engineering partners and recruiting networks across the United States and globally. We're an E-Verify employer, fully equipped for H-1B, PERM, and L-1 onboarding.</p>
-        <p><strong>cloudSrv Inc.</strong><br />Toll Brothers at Weddington<br />186 Annabelle Branch Ln<br />Apex, NC 27523</p>
+  <section class="section">
+    <div class="container">
+      <div class="split">
+        <div>
+          <span class="eyebrow">Our story</span>
+          <h2>Founded by builders. Run by builders.</h2>
+          <p class="lead" style="margin-bottom:20px;">CloudSrv was founded in 2023 by senior engineers who spent over a decade shipping production systems at high-growth product companies.</p>
+          <p>We watched US engineering teams struggle with two parallel problems: hiring senior talent that actually performs, and standing up AI systems that survive past the prototype stage. CloudSrv exists to solve both — under one roof, with the same engineering bar.</p>
+        </div>
+        <div class="split-media">
+          <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=1600&amp;q=80&amp;auto=format&amp;fit=crop"
+               alt="A modern office workspace where CloudSrv teams collaborate" loading="lazy" />
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="section section-alt">
-  <div class="container">
-    <div class="section-head">
-      <span class="eyebrow">What we believe</span>
-      <h2>Four principles, no exceptions</h2>
-    </div>
-    <div class="grid grid-2">
-      <div class="card">
-        <div class="card-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 12 2 2 4-4"/><path d="M21 12c.552 0 1.005-.449.95-.998a10 10 0 0 0-8.953-8.951c-.55-.055-.998.398-.998.95v8h9z"/><path d="M21.21 15.89A10 10 0 1 1 8 2.83"/></svg></div>
-        <h3>Senior bar, always</h3>
-        <p>Every engineer we place or deploy has shipped real software in production. No bootcamp shuffling, no fresh juniors masquerading as architects.</p>
+  <section class="section" style="background:var(--surface-2)">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">What we believe</span>
+        <h2>Four principles. No exceptions.</h2>
       </div>
-      <div class="card">
-        <div class="card-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#7C3AED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
-        <h3>Speed without shortcuts</h3>
-        <p>Most engagements start within five business days. Curated shortlists, not blasted resumes. Tight proposals, not 80-slide decks.</p>
-      </div>
-      <div class="card">
-        <div class="card-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><rect x="7" y="12" width="3" height="6"/><rect x="13" y="8" width="3" height="10"/><rect x="19" y="5" width="3" height="13"/></svg></div>
-        <h3>Outcomes, not hours</h3>
-        <p>We measure ourselves on what shipped, who got hired, and whether they stayed. Time sheets don't reflect value — outcomes do.</p>
-      </div>
-      <div class="card">
-        <div class="card-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 2 7l10 5 10-5-10-5z"/><path d="m2 17 10 5 10-5"/><path d="m2 12 10 5 10-5"/></svg></div>
-        <h3>Clean hand-offs</h3>
-        <p>We exit with documentation, training, and an internal owner ready to run the system. The goal is your team's independence, not our dependency.</p>
-      </div>
-    </div>
-  </div>
-</section>
+      <div class="industries">
 
-<section class="section">
-  <div class="container">
-    <div class="cta-band">
-      <h2>Want to know if we're the right fit?</h2>
-      <p>One conversation. Honest answer.</p>
-      <a href="contactus.html" class="btn btn-primary">Reach out →</a>
+        <div class="industry">
+          <svg class="industry-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m9 12 2 2 4-4"/>
+            <path d="M21 12c.552 0 1.005-.449.95-.998a10 10 0 0 0-8.953-8.951c-.55-.055-.998.398-.998.95v8h9z"/>
+            <path d="M21.21 15.89A10 10 0 1 1 8 2.83"/>
+          </svg>
+          <h4>Senior bar, always</h4>
+          <p>Every engineer we place or deploy has shipped real software in production. No bootcamp shuffling.</p>
+        </div>
+
+        <div class="industry">
+          <svg class="industry-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <polyline points="12 6 12 12 16 14"/>
+          </svg>
+          <h4>Speed without shortcuts</h4>
+          <p>Most engagements start within five business days. Curated shortlists, not blasted resumes.</p>
+        </div>
+
+        <div class="industry">
+          <svg class="industry-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 3v18h18"/><rect x="7" y="12" width="3" height="6"/><rect x="13" y="8" width="3" height="10"/><rect x="19" y="5" width="3" height="13"/>
+          </svg>
+          <h4>Outcomes, not hours</h4>
+          <p>We measure ourselves on what shipped, who got hired, and whether they stayed. Not timesheets.</p>
+        </div>
+
+        <div class="industry">
+          <svg class="industry-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2 2 7l10 5 10-5-10-5z"/>
+            <path d="m2 17 10 5 10-5"/>
+            <path d="m2 12 10 5 10-5"/>
+          </svg>
+          <h4>Clean hand-offs</h4>
+          <p>We exit with documentation, training, and an internal owner ready to run the system.</p>
+        </div>
+
+      </div>
     </div>
-  </div>
-</section>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="split">
+        <div>
+          <span class="eyebrow">Where we are</span>
+          <h2>Headquartered in Apex, NC.</h2>
+          <p class="lead" style="margin-bottom:20px;">Our team operates from Apex, North Carolina, with engineering partners and recruiting networks across the United States and globally.</p>
+          <p>We're an E-Verify employer, fully equipped for H-1B, PERM, and L-1 onboarding.</p>
+          <p style="margin-top:24px;"><strong>CloudSrv Inc.</strong><br />Toll Brothers at Weddington<br />186 Annabelle Branch Ln<br />Apex, NC 27523<br /><a href="mailto:hr@cloudSrv.com">hr@cloudSrv.com</a></p>
+        </div>
+        <div>
+          <div class="stats-grid" style="grid-template-columns:repeat(2,1fr);">
+            <div class="stat-block">
+              <div class="num">200<span>+</span></div>
+              <div class="label">Engineers placed</div>
+            </div>
+            <div class="stat-block">
+              <div class="num">12<span>+</span></div>
+              <div class="label">AI systems shipped</div>
+            </div>
+            <div class="stat-block">
+              <div class="num">94<span>%</span></div>
+              <div class="label">12-month retention</div>
+            </div>
+            <div class="stat-block">
+              <div class="num">18 <span>days</span></div>
+              <div class="label">Average time-to-hire</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="cta-band">
+        <span class="eyebrow on-dark" style="justify-content:center;">Let's talk</span>
+        <h2>Want to know if we're the right fit?</h2>
+        <p>One short conversation — we'll give you a straight answer within 24 hours.</p>
+        <div class="cta-actions">
+          <a href="contactus.html" class="btn btn-on-dark">Reach out <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
 
 </main>
+
 <footer class="footer">
   <div class="container">
     <div class="footer-grid">
       <div>
-        <div class="brand"><img class="brand-mark" src="assets/logo.svg" alt="cloudSrv logo" width="36" height="36">cloud<span class="brand-light">Srv</span></div>
-        <p>Boutique consulting for US companies hiring elite IT talent and building production-grade AI systems.</p>
+        <a href="index.html" class="brand-link">
+          <img class="brand-mark" src="assets/cloudsrv_logo.jpg" alt="" width="40" height="40" />
+          <span class="brand-name">Cloud<span>Srv</span></span>
+        </a>
+        <p>Boutique consulting for US companies hiring elite IT talent and shipping production-grade AI systems.</p>
       </div>
       <div>
-        <h4>Company</h4>
+        <h5>Company</h5>
         <ul>
           <li><a href="aboutus.html">About</a></li>
           <li><a href="services.html">Services</a></li>
@@ -120,16 +180,16 @@
         </ul>
       </div>
       <div>
-        <h4>Services</h4>
+        <h5>Services</h5>
         <ul>
           <li><a href="services.html#talent">IT Recruiting</a></li>
-          <li><a href="services.html#ai">AI Systems Design</a></li>
+          <li><a href="services.html#ai">AI Systems</a></li>
           <li><a href="services.html#cloud">Cloud &amp; Platform</a></li>
           <li><a href="services.html#data">Data Engineering</a></li>
         </ul>
       </div>
       <div>
-        <h4>Contact</h4>
+        <h5>Contact</h5>
         <ul>
           <li>Toll Brothers at Weddington</li>
           <li>186 Annabelle Branch Ln</li>
@@ -139,7 +199,7 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© 2026 cloudSrv Inc. All rights reserved.</span>
+      <span>© 2026 CloudSrv Inc. All rights reserved.</span>
       <span>E-Verify Employer</span>
     </div>
   </div>
