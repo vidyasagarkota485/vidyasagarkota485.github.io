@@ -150,7 +150,7 @@ strong { font-weight: 600; color: var(--ink); }
 }
 .nav-inner { display: flex; align-items: center; justify-content: space-between; height: 76px; }
 .brand-link { display: inline-flex; align-items: center; gap: 10px; color: var(--ink); }
-.brand-mark { width: 36px; height: 36px; flex-shrink: 0; }
+.brand-mark { width: 40px; height: 40px; flex-shrink: 0; border-radius: 8px; object-fit: cover; }
 .brand-name { font-size: 1.2rem; font-weight: 700; letter-spacing: -0.02em; color: var(--ink); }
 .brand-name span { color: var(--brand-deep); }
 .nav-links { display: flex; align-items: center; gap: 4px; }
