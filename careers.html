@@ -3,108 +3,118 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Careers — cloudSrv</title>
-  <meta name="description" content="Open roles at cloudSrv. Senior engineers and architects building production-grade systems for US companies." />
-  <link rel="icon" type="image/svg+xml" href="assets/logo.svg" />
-  <link rel="alternate icon" type="image/png" href="images/favicon.png" />
+  <title>Careers — CloudSrv</title>
+  <meta name="description" content="Open roles at CloudSrv. Senior engineers and architects building production-grade systems for US companies." />
+  <link rel="icon" type="image/jpeg" href="assets/cloudsrv_logo.jpg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,300..700,0..100&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/style-legacy.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
 <a href="#main" class="skip-link">Skip to content</a>
 
 <nav class="nav">
   <div class="container nav-inner">
-    <a href="index.html" class="brand"><img class="brand-mark" src="assets/logo.svg" alt="cloudSrv logo" width="36" height="36">cloud<span class="brand-light">Srv</span></a>
-    <button class="nav-toggle" aria-label="Menu" onclick="document.getElementById('navlinks').classList.toggle('open')"><span></span><span></span><span></span></button>
+    <a href="index.html" class="brand-link">
+      <img class="brand-mark" src="assets/cloudsrv_logo.jpg" alt="" width="40" height="40" />
+      <span class="brand-name">Cloud<span>Srv</span></span>
+    </a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" onclick="const n=document.getElementById('navlinks');const o=n.classList.toggle('open');this.setAttribute('aria-expanded',o)">
+      <span></span>
+    </button>
     <ul class="nav-links" id="navlinks">
       <li><a href="index.html">Home</a></li>
       <li><a href="services.html">Services</a></li>
       <li><a href="aboutus.html">About</a></li>
       <li><a href="careers.html" class="active">Careers</a></li>
-      <li><a href="contactus.html" class="nav-cta">Contact Us</a></li>
+      <li><a href="contactus.html" class="btn btn-primary" style="padding:10px 20px;font-size:.9rem;margin-left:8px">Talk to us</a></li>
     </ul>
   </div>
 </nav>
+
 <main id="main">
 
-<section class="page-head">
-  <div class="container page-head-inner">
-    <div class="crumbs"><a href="index.html">Home</a> / Careers</div>
-    <span class="eyebrow">Open Positions</span>
-    <h1>Build with senior engineers,<br /><span class="gradient-text">on serious problems.</span></h1>
-    <p class="lead" style="max-width:640px; margin: 12px auto 0;">cloudSrv hires engineers who have shipped real systems and want to keep doing it. If that's you, we'd like to talk.</p>
-  </div>
-</section>
+  <section class="page-head">
+    <div class="container">
+      <div class="page-head-inner">
+        <div class="crumbs"><a href="index.html">Home</a> &nbsp;/&nbsp; Careers</div>
+        <h1>Build with senior engineers, on serious problems.</h1>
+        <p class="lead">CloudSrv hires engineers who have shipped real systems and want to keep doing it. If that's you, we'd like to talk.</p>
+      </div>
+    </div>
+  </section>
 
-<section class="section">
-  <div class="container" style="max-width: 900px;">
+  <section class="section">
+    <div class="container" style="max-width: 900px;">
 
-    <article class="job">
-      <div class="job-header">
-        <div class="job-title">
-          <h2>Solution Architects</h2>
-          <div class="job-meta">
-            <span>Apex, NC</span>
-            <span>·</span>
-            <span>Various unanticipated U.S. locations</span>
-            <span>·</span>
-            <span>Full-time, Permanent</span>
+      <article class="job">
+        <div class="job-header">
+          <div class="job-title">
+            <h2>Solution Architects</h2>
+            <div class="job-meta">
+              <span>Apex, NC</span>
+              <span>·</span>
+              <span>Various unanticipated U.S. locations</span>
+              <span>·</span>
+              <span>Full-time, Permanent</span>
+            </div>
           </div>
+          <span class="job-tag">Now Hiring</span>
         </div>
-        <span class="job-tag">Now Hiring</span>
-      </div>
 
-      <div class="job-section">
-        <h4>Position</h4>
-        <p>Design, Manage and implement cloud native solutions, API management, Security and cloud-to-cloud integration across both public and Private clouds.</p>
-      </div>
+        <div class="job-section">
+          <h4>Position</h4>
+          <p>Design, Manage and implement cloud native solutions, API management, Security and cloud-to-cloud integration across both public and Private clouds.</p>
+        </div>
 
-      <div class="job-section">
-        <h4>Duties</h4>
-        <ul>
-          <li>Analyze, plan, design, and execute migration from monolithic to microservice cloud migrations using NodeJS, Java/JEE, Spring Boot, web flux, JPA, Hibernate, and Spring security.</li>
-          <li>Build CI/CD and automation pipelines in Aws DevOps (ADO) and Jenkins platforms, encompassing source code management, configuration management, automation, and containerization using Docker and Kubernetes and Terraform.</li>
-          <li>Integrate OpenSearch with Kafka and Flink to create a seamless data pipeline, enabling real-time indexing and search capabilities for high-velocity data streams.</li>
-          <li>Deploy and configure Argo Workflows on Kubernetes clusters to automate and scale workflow execution.</li>
-        </ul>
-      </div>
+        <div class="job-section">
+          <h4>Duties</h4>
+          <ul>
+            <li>Analyze, plan, design, and execute migration from monolithic to microservice cloud migrations using NodeJS, Java/JEE, Spring Boot, web flux, JPA, Hibernate, and Spring security.</li>
+            <li>Build CI/CD and automation pipelines in Aws DevOps (ADO) and Jenkins platforms, encompassing source code management, configuration management, automation, and containerization using Docker and Kubernetes and Terraform.</li>
+            <li>Integrate OpenSearch with Kafka and Flink to create a seamless data pipeline, enabling real-time indexing and search capabilities for high-velocity data streams.</li>
+            <li>Deploy and configure Argo Workflows on Kubernetes clusters to automate and scale workflow execution.</li>
+          </ul>
+        </div>
 
-      <div class="job-section">
-        <h4>Requirements</h4>
-        <p>Master's degree in Science, Technology, or Engineering (any) is required.</p>
-      </div>
+        <div class="job-section">
+          <h4>Requirements</h4>
+          <p>Master's degree in Science, Technology, or Engineering (any) is required.</p>
+        </div>
 
-      <div class="job-section">
-        <h4>Job Site &amp; Travel</h4>
-        <p>Apex, NC and various unanticipated locations throughout the U.S.</p>
-      </div>
+        <div class="job-section">
+          <h4>Job Site &amp; Travel</h4>
+          <p>Apex, NC and various unanticipated locations throughout the U.S.</p>
+        </div>
 
-      <div class="job-apply">
-        <strong>To Apply:</strong> E-mail resume to HR Dept., Cloudsrv, LLC., at <a href="mailto:hr@cloudSrv.com">hr@cloudSrv.com</a>.<br />
-        <strong>Referral Bonus:</strong> Should the candidate accept employment with Cloudsrv, LLC., the referring employee will be eligible to receive an award of $1,000.00 for the successful referral.
-      </div>
-    </article>
+        <div class="job-apply">
+          <strong>To Apply:</strong> E-mail resume to HR Dept., Cloudsrv, LLC., at <a href="mailto:hr@cloudSrv.com">hr@cloudSrv.com</a>.<br />
+          <strong>Referral Bonus:</strong> Should the candidate accept employment with Cloudsrv, LLC., the referring employee will be eligible to receive an award of $1,000.00 for the successful referral.
+        </div>
+      </article>
 
-    <p class="lead text-center" style="margin-top:48px;">
-      Don't see a fit? We always want to hear from senior engineers. Email <a href="mailto:hr@cloudSrv.com">hr@cloudSrv.com</a>.
-    </p>
+      <p class="lead t-center" style="margin-top:48px; text-align:center;">
+        Don't see a fit? We always want to hear from senior engineers. Email <a href="mailto:hr@cloudSrv.com">hr@cloudSrv.com</a>.
+      </p>
 
-  </div>
-</section>
+    </div>
+  </section>
 
 </main>
+
 <footer class="footer">
   <div class="container">
     <div class="footer-grid">
       <div>
-        <div class="brand"><img class="brand-mark" src="assets/logo.svg" alt="cloudSrv logo" width="36" height="36">cloud<span class="brand-light">Srv</span></div>
-        <p>Boutique consulting for US companies hiring elite IT talent and building production-grade AI systems.</p>
+        <a href="index.html" class="brand-link">
+          <img class="brand-mark" src="assets/cloudsrv_logo.jpg" alt="" width="40" height="40" />
+          <span class="brand-name">Cloud<span>Srv</span></span>
+        </a>
+        <p>Boutique consulting for US companies hiring elite IT talent and shipping production-grade AI systems.</p>
       </div>
       <div>
-        <h4>Company</h4>
+        <h5>Company</h5>
         <ul>
           <li><a href="aboutus.html">About</a></li>
           <li><a href="services.html">Services</a></li>
@@ -113,16 +123,16 @@
         </ul>
       </div>
       <div>
-        <h4>Services</h4>
+        <h5>Services</h5>
         <ul>
           <li><a href="services.html#talent">IT Recruiting</a></li>
-          <li><a href="services.html#ai">AI Systems Design</a></li>
+          <li><a href="services.html#ai">AI Systems</a></li>
           <li><a href="services.html#cloud">Cloud &amp; Platform</a></li>
           <li><a href="services.html#data">Data Engineering</a></li>
         </ul>
       </div>
       <div>
-        <h4>Contact</h4>
+        <h5>Contact</h5>
         <ul>
           <li>Toll Brothers at Weddington</li>
           <li>186 Annabelle Branch Ln</li>
@@ -132,7 +142,7 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© 2026 cloudSrv Inc. All rights reserved.</span>
+      <span>© 2026 CloudSrv Inc. All rights reserved.</span>
       <span>E-Verify Employer</span>
     </div>
   </div>
