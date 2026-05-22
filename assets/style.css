@@ -92,8 +92,8 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.08;
   letter-spacing: -0.025em;
 }
-h1 { font-size: clamp(2.6rem, 6vw, 4.6rem); font-weight: 800; letter-spacing: -0.04em; line-height: 1.02; }
-h2 { font-size: clamp(2rem, 4.2vw, 3rem); font-weight: 700; letter-spacing: -0.03em; line-height: 1.06; }
+h1 { font-size: clamp(2.6rem, 6vw, 4.6rem); font-weight: 800; letter-spacing: -0.04em; line-height: 1.02; text-wrap: balance; }
+h2 { font-size: clamp(2rem, 4.2vw, 3rem); font-weight: 700; letter-spacing: -0.03em; line-height: 1.06; text-wrap: balance; }
 h3 { font-size: 1.5rem; font-weight: 700; letter-spacing: -0.02em; line-height: 1.2; }
 h4 { font-size: 1.125rem; font-weight: 600; letter-spacing: -0.015em; }
 p  { color: var(--ink-2); line-height: 1.65; }
@@ -294,43 +294,61 @@ strong { font-weight: 600; color: var(--ink); }
 .practice-foot { margin-top: auto; padding-top: 24px; border-top: 1px solid var(--line); }
 .practice-tile.dark .practice-foot { border-color: var(--dark-line); }
 
-/* ---------- 12. Stat blocks (numbered) ---------- */
+/* ---------- 12. Stat blocks (soft cards, consistent) ---------- */
 .stats-grid {
-  display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 0;
-  border-top: 1px solid var(--line);
-  border-bottom: 1px solid var(--line);
+  display: grid; grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
 }
-.stat-block { padding: 48px 32px; border-right: 1px solid var(--line); position: relative; }
-.stat-block:last-child { border-right: none; }
-.stat-block .num { font-size: clamp(2.4rem, 4.5vw, 3.4rem); font-weight: 800; letter-spacing: -0.04em; color: var(--ink); line-height: 1; margin-bottom: 12px; }
-.stat-block .num span { color: var(--brand-deep); }
-.stat-block .label { font-size: 0.95rem; color: var(--muted); max-width: 24ch; }
+@media (max-width: 900px) { .stats-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 480px) { .stats-grid { grid-template-columns: 1fr; } }
+.stat-block {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--r-lg);
+  padding: 32px 28px;
+  transition: border-color .25s var(--ease), transform .25s var(--ease);
+}
+.stat-block:hover { border-color: var(--brand); transform: translateY(-2px); }
+.stat-block .num { font-size: clamp(2.2rem, 4vw, 3rem); font-weight: 800; letter-spacing: -0.04em; color: var(--ink); line-height: 1; margin-bottom: 10px; }
+.stat-block .num span { color: var(--brand-deep); font-size: 0.75em; font-weight: 700; }
+.stat-block .label { font-size: 0.92rem; color: var(--muted); max-width: 28ch; }
 
-/* ---------- 13. Process (numbered steps) ---------- */
-.process { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 0; border: 1px solid var(--line); border-radius: var(--r-lg); overflow: hidden; }
-.process-step { padding: 36px 32px; background: var(--surface); border-right: 1px solid var(--line); position: relative; transition: background .25s var(--ease); }
-.process-step:last-child { border-right: none; }
-.process-step:hover { background: var(--surface-2); }
-.process-step .num { font-size: 0.78rem; font-weight: 600; letter-spacing: 0.14em; color: var(--brand-deep); margin-bottom: 24px; }
-.process-step h4 { font-size: 1.2rem; margin-bottom: 10px; }
+/* ---------- 13. Process (soft cards, consistent) ---------- */
+.process { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+@media (max-width: 900px) { .process { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 480px) { .process { grid-template-columns: 1fr; } }
+.process-step {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--r-lg);
+  padding: 32px 28px;
+  position: relative;
+  transition: border-color .25s var(--ease), transform .25s var(--ease);
+}
+.process-step:hover { border-color: var(--brand); transform: translateY(-2px); }
+.process-step .num { font-size: 0.75rem; font-weight: 600; letter-spacing: 0.14em; color: var(--brand-deep); margin-bottom: 20px; }
+.process-step h4 { font-size: 1.15rem; margin-bottom: 8px; }
 .process-step p { font-size: 0.92rem; color: var(--muted); margin: 0; }
-@media (max-width: 900px) {
-  .process { grid-template-columns: 1fr 1fr; }
-  .process-step { border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); }
-}
-@media (max-width: 560px) {
-  .process { grid-template-columns: 1fr; }
-  .process-step { border-right: none; }
-}
 
-/* ---------- 14. Industries grid ---------- */
-.industries { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: var(--r-lg); overflow: hidden; }
-.industry { padding: 32px; background: var(--surface); transition: background .25s var(--ease); }
-.industry:hover { background: var(--surface-2); }
-.industry-icon { width: 32px; height: 32px; color: var(--brand-deep); margin-bottom: 18px; }
-.industry h4 { font-size: 1rem; font-weight: 600; margin-bottom: 6px; }
-.industry p { font-size: 0.88rem; color: var(--muted); margin: 0; }
+/* ---------- 14. Industries (soft cards, consistent, fixed 3-col) ---------- */
+.industries {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+@media (max-width: 900px) { .industries { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 480px) { .industries { grid-template-columns: 1fr; } }
+.industry {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--r-lg);
+  padding: 32px 28px;
+  transition: border-color .25s var(--ease), transform .25s var(--ease);
+}
+.industry:hover { border-color: var(--brand); transform: translateY(-2px); }
+.industry-icon { width: 28px; height: 28px; color: var(--brand-deep); margin-bottom: 18px; }
+.industry h4 { font-size: 1.05rem; font-weight: 600; margin-bottom: 6px; }
+.industry p { font-size: 0.9rem; color: var(--muted); margin: 0; }
 
 /* ---------- 15. Case study / Insight tile ---------- */
 .tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; }
