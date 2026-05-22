@@ -3,160 +3,230 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Services — cloudSrv</title>
-  <meta name="description" content="IT recruiting and AI systems design services from cloudSrv. Senior engineers, AI architecture, and cloud platform delivery." />
-  <link rel="icon" type="image/svg+xml" href="assets/logo.svg" />
-  <link rel="alternate icon" type="image/png" href="images/favicon.png" />
+  <title>Services — CloudSrv</title>
+  <meta name="description" content="Two practices, one bar: shipped. IT recruiting and AI systems design from CloudSrv — boutique consulting for US companies." />
+  <link rel="icon" type="image/jpeg" href="assets/cloudsrv_logo.jpg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,300..700,0..100&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/style-legacy.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
 <a href="#main" class="skip-link">Skip to content</a>
 
 <nav class="nav">
   <div class="container nav-inner">
-    <a href="index.html" class="brand"><img class="brand-mark" src="assets/logo.svg" alt="cloudSrv logo" width="36" height="36">cloud<span class="brand-light">Srv</span></a>
-    <button class="nav-toggle" aria-label="Menu" onclick="document.getElementById('navlinks').classList.toggle('open')"><span></span><span></span><span></span></button>
+    <a href="index.html" class="brand-link">
+      <img class="brand-mark" src="assets/cloudsrv_logo.jpg" alt="" width="40" height="40" />
+      <span class="brand-name">Cloud<span>Srv</span></span>
+    </a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" onclick="const n=document.getElementById('navlinks');const o=n.classList.toggle('open');this.setAttribute('aria-expanded',o)">
+      <span></span>
+    </button>
     <ul class="nav-links" id="navlinks">
       <li><a href="index.html">Home</a></li>
       <li><a href="services.html" class="active">Services</a></li>
       <li><a href="aboutus.html">About</a></li>
       <li><a href="careers.html">Careers</a></li>
-      <li><a href="contactus.html" class="nav-cta">Contact Us</a></li>
+      <li><a href="contactus.html" class="btn btn-primary" style="padding:10px 20px;font-size:.9rem;margin-left:8px">Talk to us</a></li>
     </ul>
   </div>
 </nav>
+
 <main id="main">
 
-<section class="page-head">
-  <div class="container page-head-inner">
-    <div class="crumbs"><a href="index.html">Home</a> / Services</div>
-    <span class="eyebrow">What we deliver</span>
-    <h1>Services built for outcomes, not hours.</h1>
-    <p class="lead" style="max-width:640px; margin: 12px auto 0;">Two practices, deeply connected: senior IT talent that ships, and AI systems engineered for production.</p>
-  </div>
-</section>
+  <!-- =========================
+       PAGE HEAD (dark)
+       ========================= -->
+  <section class="page-head">
+    <div class="container">
+      <div class="page-head-inner">
+        <div class="crumbs"><a href="index.html">Home</a> &nbsp;/&nbsp; Services</div>
+        <h1>Services built for outcomes, not hours.</h1>
+        <p class="lead">Two practices that share one engineering bar. Hire from us, or hire us — either way, the people who show up have shipped real software in production.</p>
+      </div>
+    </div>
+  </section>
 
-<section class="section" id="talent">
-  <div class="container">
-    <div class="grid grid-2" style="align-items:center;">
-      <div>
-        <span class="eyebrow">Practice 01</span>
-        <h2>IT Talent &amp; Recruiting</h2>
-        <p>We don't run a generic staffing desk. cloudSrv recruiters are former engineers themselves, which is why our candidates pass technical bars at top US engineering teams. Every shortlist is curated — never blasted.</p>
-        <p><strong>Engagement models:</strong> permanent placement, contract-to-hire, embedded squads, and PERM/H-1B-aware onboarding for global hires.</p>
-        <p><strong>Roles we fill:</strong> Senior &amp; Staff Engineers, Engineering Managers, Solutions Architects, ML/AI Engineers, Platform/DevOps, Data Engineers, Security Engineers.</p>
+  <!-- =========================
+       PRACTICE 01 — IT TALENT
+       ========================= -->
+  <section class="section" id="talent">
+    <div class="container">
+      <div class="split">
+        <div>
+          <span class="eyebrow">Practice 01</span>
+          <h2>IT Talent &amp; Recruiting</h2>
+          <p class="lead" style="margin-bottom:24px;">We don't run a generic staffing desk. CloudSrv recruiters are former engineers, which is why our candidates pass technical bars at top US engineering teams. Every shortlist is curated — never blasted.</p>
+          <p><strong>Engagement models:</strong> permanent placement, contract-to-hire, embedded squads, and PERM / H-1B-aware onboarding for global hires.</p>
+          <p><strong>Roles we fill:</strong> Senior &amp; Staff Engineers, Engineering Managers, Solutions Architects, ML / AI Engineers, Platform / DevOps, Data Engineers, Security Engineers.</p>
+          <div style="margin-top:32px;">
+            <a href="contactus.html" class="btn btn-primary">Hire with us <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+        <div class="split-media">
+          <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?w=1400&amp;q=80&amp;auto=format&amp;fit=crop"
+               alt="A senior engineer in a technical interview" loading="lazy" />
+        </div>
       </div>
-      <div class="section-media">
-        <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?w=1400&amp;q=80&amp;auto=format&amp;fit=crop" alt="Senior engineers in a technical interview discussion" loading="lazy" />
-      </div>
-    </div>
-    <div class="card card-feature" style="margin-top:48px;">
-      <h3 style="margin-bottom:20px;">What clients get</h3>
-      <ul style="padding-left:20px; color:var(--ink-2); line-height:1.9; margin:0; columns:2; column-gap:32px;">
-        <li>Curated shortlist within 5 business days</li>
-        <li>Technical screen by senior engineers</li>
-        <li>Reference checks &amp; offer support</li>
-        <li>Onboarding playbook for first 90 days</li>
-        <li>Immigration &amp; visa coordination</li>
-        <li>Replacement guarantee on permanent hires</li>
-      </ul>
-    </div>
-  </div>
-</section>
 
-<section class="section section-alt" id="ai">
-  <div class="container">
-    <div class="grid grid-2" style="align-items:center;">
-      <div class="section-media">
-        <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=1400&amp;q=80&amp;auto=format&amp;fit=crop" alt="Abstract visualization of an AI system in production" loading="lazy" />
-      </div>
-      <div>
-        <span class="eyebrow">Practice 02</span>
-        <h2>AI Systems Design</h2>
-        <p>Most AI demos die between prototype and production. We've built the difference enough times to make it predictable: real evals, sober latency and cost budgets, observability, and a hand-off your team can actually run.</p>
-        <p><strong>Where we operate:</strong> AWS Bedrock, Azure OpenAI, GCP Vertex, plus open-source stacks (vLLM, Ollama) when self-hosting makes sense.</p>
-        <p><strong>Outcome focus:</strong> shipped systems with measurable accuracy, latency, and unit-economic guarantees — not slide decks.</p>
+      <div class="stats-grid" style="margin-top:64px;">
+        <div class="stat-block">
+          <div class="num">5 <span>days</span></div>
+          <div class="label">Curated shortlist delivered</div>
+        </div>
+        <div class="stat-block">
+          <div class="num">18 <span>days</span></div>
+          <div class="label">Average time to signed offer</div>
+        </div>
+        <div class="stat-block">
+          <div class="num">94<span>%</span></div>
+          <div class="label">12-month retention on permanent hires</div>
+        </div>
+        <div class="stat-block">
+          <div class="num">90 <span>days</span></div>
+          <div class="label">Replacement guarantee window</div>
+        </div>
       </div>
     </div>
-    <div class="card card-feature card-grad" style="margin-top:48px;">
-      <h3 style="margin-bottom:20px;">What we build</h3>
-      <ul style="padding-left:20px; color:rgba(255,255,255,0.92); line-height:1.9; margin:0; columns:2; column-gap:32px;">
-        <li>RAG pipelines with real evals &amp; guardrails</li>
-        <li>Multi-agent platforms &amp; tool-use orchestration</li>
-        <li>Vector infrastructure &amp; hybrid search</li>
-        <li>Model fine-tuning &amp; inference cost tuning</li>
-        <li>LLM observability, tracing, and safety reviews</li>
-        <li>Prompt &amp; eval frameworks for product teams</li>
-      </ul>
-    </div>
-  </div>
-</section>
+  </section>
 
-<section class="section" id="capabilities">
-  <div class="container">
-    <div class="section-head">
-      <span class="eyebrow">Supporting capabilities</span>
-      <h2>The platform underneath</h2>
-      <p>Recruiting and AI rarely succeed without solid platform foundations. We deliver those too.</p>
-    </div>
-    <div class="grid grid-3 grid-hairline">
-      <div class="card" id="cloud">
-        <div class="card-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#7C3AED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 19a4.5 4.5 0 1 0 0-9h-1.8A7 7 0 1 0 4 16.9"/></svg></div>
-        <h3>Cloud &amp; Platform</h3>
-        <p>AWS, Azure, GCP delivery. Kubernetes &amp; ArgoCD pipelines. Terraform-managed infrastructure with cost guardrails.</p>
+  <!-- =========================
+       PRACTICE 02 — AI SYSTEMS
+       ========================= -->
+  <section class="section" id="ai" style="background:var(--surface-2)">
+    <div class="container">
+      <div class="split">
+        <div class="split-media" style="order:1;">
+          <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=1400&amp;q=80&amp;auto=format&amp;fit=crop"
+               alt="Abstract visualization of an AI system in production" loading="lazy" />
+        </div>
+        <div style="order:2;">
+          <span class="eyebrow">Practice 02</span>
+          <h2>AI Systems Design</h2>
+          <p class="lead" style="margin-bottom:24px;">Most AI demos die between prototype and production. We've built the difference enough times to make it predictable: real evals, sober latency and cost budgets, observability, and a handoff your team can actually run.</p>
+          <p><strong>Where we operate:</strong> AWS Bedrock, Azure OpenAI, GCP Vertex, plus open-source stacks (vLLM, Ollama) when self-hosting makes sense.</p>
+          <p><strong>Outcome focus:</strong> shipped systems with measurable accuracy, latency, and unit-economic guarantees — not slide decks.</p>
+          <div style="margin-top:32px;">
+            <a href="contactus.html" class="btn btn-primary">Talk to an architect <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
       </div>
-      <div class="card" id="data">
-        <div class="card-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14a9 3 0 0 0 18 0V5"/><path d="M3 12a9 3 0 0 0 18 0"/></svg></div>
-        <h3>Data Engineering</h3>
-        <p>Kafka, Flink, Iceberg, Delta Lake. CDC pipelines, schema evolution, and real-time analytics done right.</p>
-      </div>
-      <div class="card">
-        <div class="card-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
-        <h3>Backend &amp; APIs</h3>
-        <p>Go, Java, Python. gRPC, REST, GraphQL. Migrating monoliths to microservices without breaking production.</p>
-      </div>
-      <div class="card">
-        <div class="card-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
-        <h3>Security &amp; Compliance</h3>
-        <p>SOC 2-aligned reviews, IAM hardening, secrets management, vulnerability scanning, and incident response.</p>
-      </div>
-      <div class="card">
-        <div class="card-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#EF4444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
-        <h3>QA &amp; Reliability</h3>
-        <p>Test strategy, automation frameworks, SLO engineering, observability, and chaos &amp; load testing.</p>
-      </div>
-      <div class="card">
-        <div class="card-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#06B6D4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h18"/><path d="M3 6h18"/><path d="M3 18h18"/></svg></div>
-        <h3>Database Management</h3>
-        <p>PostgreSQL, MongoDB, Redis, Elasticsearch. Schema design, migrations, performance tuning, and replication.</p>
-      </div>
-    </div>
-  </div>
-</section>
 
-<section class="section">
-  <div class="container">
-    <div class="cta-band">
-      <h2>Have a role to fill or a system to ship?</h2>
-      <p>One short conversation — we'll tell you within 48 hours if we're the right partner.</p>
-      <a href="contactus.html" class="btn btn-primary">Talk to us →</a>
+      <div class="industries" style="margin-top:64px;">
+        <div class="industry">
+          <svg class="industry-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+          <h4>RAG &amp; Retrieval</h4>
+          <p>Hybrid search, evals, prompt eng — pipelines that hold up under real load.</p>
+        </div>
+        <div class="industry">
+          <svg class="industry-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+          <h4>Multi-Agent Platforms</h4>
+          <p>Tool-use orchestration with guardrails, observability, and clean exits.</p>
+        </div>
+        <div class="industry">
+          <svg class="industry-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14a9 3 0 0 0 18 0V5"/><path d="M3 12a9 3 0 0 0 18 0"/></svg>
+          <h4>Vector Infrastructure</h4>
+          <p>Embeddings pipelines, vector DBs, hybrid retrieval at production scale.</p>
+        </div>
+        <div class="industry">
+          <svg class="industry-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          <h4>Evals &amp; Safety</h4>
+          <p>Real eval frameworks, red-team review, and ongoing quality monitoring.</p>
+        </div>
+        <div class="industry">
+          <svg class="industry-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m7 14 4-4 4 4 5-5"/></svg>
+          <h4>Inference Cost Tuning</h4>
+          <p>Routing, caching, model selection — cut spend without quality loss.</p>
+        </div>
+        <div class="industry">
+          <svg class="industry-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          <h4>MLOps &amp; Observability</h4>
+          <p>Tracing, drift detection, prompt versioning — your team owns it day one.</p>
+        </div>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
+
+  <!-- =========================
+       SUPPORTING CAPABILITIES
+       ========================= -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Supporting capabilities</span>
+        <h2>The platform underneath.</h2>
+        <p class="lead">Recruiting and AI rarely succeed without solid platform foundations. We deliver those too.</p>
+      </div>
+      <div class="industries">
+        <div class="industry" id="cloud">
+          <svg class="industry-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 19a4.5 4.5 0 1 0 0-9h-1.8A7 7 0 1 0 4 16.9"/></svg>
+          <h4>Cloud &amp; Platform</h4>
+          <p>AWS, Azure, GCP. Kubernetes, ArgoCD, Terraform.</p>
+        </div>
+        <div class="industry" id="data">
+          <svg class="industry-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14a9 3 0 0 0 18 0V5"/><path d="M3 12a9 3 0 0 0 18 0"/></svg>
+          <h4>Data Engineering</h4>
+          <p>Kafka, Flink, Iceberg, Delta Lake. CDC pipelines done right.</p>
+        </div>
+        <div class="industry">
+          <svg class="industry-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          <h4>Backend &amp; APIs</h4>
+          <p>Go, Java, Python. gRPC, REST, GraphQL. Monolith → microservices.</p>
+        </div>
+        <div class="industry">
+          <svg class="industry-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          <h4>Security &amp; Compliance</h4>
+          <p>SOC 2 reviews, IAM hardening, secrets, vulnerability scanning.</p>
+        </div>
+        <div class="industry">
+          <svg class="industry-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          <h4>QA &amp; Reliability</h4>
+          <p>Test strategy, automation, SLO engineering, chaos &amp; load.</p>
+        </div>
+        <div class="industry">
+          <svg class="industry-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h18"/><path d="M3 6h18"/><path d="M3 18h18"/></svg>
+          <h4>Databases</h4>
+          <p>Postgres, MongoDB, Redis, Elasticsearch — schema, scale, replication.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================
+       CTA BAND
+       ========================= -->
+  <section class="section">
+    <div class="container">
+      <div class="cta-band">
+        <span class="eyebrow on-dark" style="justify-content:center;">Let's talk</span>
+        <h2>The role you can't fill. The system you can't ship. Start here.</h2>
+        <p>Tell us what's stuck. We'll come back within 24 hours with a path forward.</p>
+        <div class="cta-actions">
+          <a href="contactus.html" class="btn btn-on-dark">Talk to us <span aria-hidden="true">→</span></a>
+          <a href="careers.html" class="btn btn-outline-on-dark">See open roles</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
 </main>
+
+<!-- =========================
+     FOOTER
+     ========================= -->
 <footer class="footer">
   <div class="container">
     <div class="footer-grid">
       <div>
-        <div class="brand"><img class="brand-mark" src="assets/logo.svg" alt="cloudSrv logo" width="36" height="36">cloud<span class="brand-light">Srv</span></div>
-        <p>Boutique consulting for US companies hiring elite IT talent and building production-grade AI systems.</p>
+        <a href="index.html" class="brand-link">
+          <img class="brand-mark" src="assets/cloudsrv_logo.jpg" alt="" width="40" height="40" />
+          <span class="brand-name">Cloud<span>Srv</span></span>
+        </a>
+        <p>Boutique consulting for US companies hiring elite IT talent and shipping production-grade AI systems.</p>
       </div>
       <div>
-        <h4>Company</h4>
+        <h5>Company</h5>
         <ul>
           <li><a href="aboutus.html">About</a></li>
           <li><a href="services.html">Services</a></li>
@@ -165,16 +235,16 @@
         </ul>
       </div>
       <div>
-        <h4>Services</h4>
+        <h5>Services</h5>
         <ul>
           <li><a href="services.html#talent">IT Recruiting</a></li>
-          <li><a href="services.html#ai">AI Systems Design</a></li>
+          <li><a href="services.html#ai">AI Systems</a></li>
           <li><a href="services.html#cloud">Cloud &amp; Platform</a></li>
           <li><a href="services.html#data">Data Engineering</a></li>
         </ul>
       </div>
       <div>
-        <h4>Contact</h4>
+        <h5>Contact</h5>
         <ul>
           <li>Toll Brothers at Weddington</li>
           <li>186 Annabelle Branch Ln</li>
@@ -184,7 +254,7 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© 2026 cloudSrv Inc. All rights reserved.</span>
+      <span>© 2026 CloudSrv Inc. All rights reserved.</span>
       <span>E-Verify Employer</span>
     </div>
   </div>
